@@ -1,8 +1,9 @@
 // Create a function 
-$(document).ready(function(){
-$(".start").on("click", function(){
-    $(".time").click();
-    console.log(".time");
-
-});
-});
+     var i= 1; 
+    $(".start").click(function(e){
+        setInterval(function (){
+            $(".timer").html(i);
+            i++;
+        }, 1000);
+    }
+    );
